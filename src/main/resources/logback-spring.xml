@@ -9,8 +9,8 @@
     -->
     <springProperty scope="context" name="appName" source="spring.application.name" defaultValue="app"/>
     <springProperty scope="context" name="rootLevel" source="root.logging.level" defaultValue="info"/>
-    <springProperty scope="context" name="loggingLevel" source="webank.logging.level" defaultValue="info"/>
-    <springProperty scope="context" name="logPath" source="webank.logging.path" defaultValue="./"/>
+    <springProperty scope="context" name="loggingLevel" source="application.logging.level" defaultValue="info"/>
+    <springProperty scope="context" name="logPath" source="application.logging.path" defaultValue="./"/>
 
     <property name="LOGS" value="${logPath}/logs/${appName}" />
 
